@@ -66,7 +66,7 @@ def updateWarp_surface2( name='SGS_real0'):
 points, polys, elevation, color_range2, cmap = updateWarp_surface2()
 
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 server = app.server
 
@@ -404,7 +404,7 @@ navbar = dbc.Navbar(
                     className="g-2",
                 ),
 
-            dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
+            # dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
             dbc.Collapse(
                 search_bar,
                 id="navbar-collapse",
@@ -415,7 +415,7 @@ navbar = dbc.Navbar(
     ),
     color="light",
     dark=False,
-    className="pt-0 pb-0"
+
 )
 
 
