@@ -66,7 +66,7 @@ def updateWarp_surface2( name='SGS_real0'):
 points, polys, elevation, color_range2, cmap = updateWarp_surface2()
 
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX])
 
 server = app.server
 
@@ -199,7 +199,7 @@ fig = px.scatter_mapbox(
         zoom=10
         
     )
-fig.update_layout(margin=dict(l=75, r=20, t=10, b=20),
+fig.update_layout(margin=dict(l=20, r=20, t=10, b=20),
 mapbox = dict(
                             uirevision='no reset of zoom', # prevent to dezoom 
                             # accesstoken = token,
@@ -227,22 +227,22 @@ text = dbc.Card(
         [
             html.P(
                 "Spatial interpolation is the process of using points with known values to estimate values at other unknown points. This app present different approaches to interpolate the depth of Molasse measured in 63 wells over the Geneva area in Switzerland. The deterministic interpolation section allow to explore 3 different algorithms (nearest neighbors,  biharmonic spline and Gaussian processes), while in the geostatistical approach, an ordinary Kriging and a Sequential Gaussian Simulation (SGS) algorithms have been used. It seems that Kriging and SGS are the better estimator and that SGS, by computing local summary statistics, allow to quantify the local uncertainty. In addition, SGS results better represents the natural variability of the Molassse surface.",
-                style={'color': '#444444', 'fontSize': 14, "font-family":"Product Sans"},
+                style={'color': '#1E293B', 'fontSize': 14, "font-family":"Product Sans"},
             ),
             dcc.Markdown(
                 """
                 The codes to build this app and the notebooks for the spatial analysis are available [here](https://github.com/lperozzi/Spatial_interpolation_app) and [here](https://github.com/lperozzi/Spatial_interpolation_analysis), respectively.
                  """,
-                style={'color': '#444444', 'fontSize': 14, "font-family":"Product Sans"},
+                style={'color': '#1E293B', 'fontSize': 14, "font-family":"Product Sans"},
             ),
 
             dbc.Button("#scikit-learn", 
                         color="dark", 
                         className="me-1",
                         size="sm",
-                        style={"color": "#475569",
-                                "background-color": "#F1F5F9",
-                                "border-color": "#475569",
+                        style={"color": "#F0FDFA",
+                                "background-color": "#134E4A",
+                                "border-color": "#F0FDFA",
                                 "border-radius":"9999px",
                                 'fontSize': 14,
                                 "font-family":"Product Sans",
@@ -253,11 +253,9 @@ text = dbc.Card(
                         color="dark", 
                         className="me-1",
                         size="sm",
-                        style={"color": "#475569",
-                                "background-color": "#F1F5F9",
-                                "border-color": "#475569","color": "#475569",
-                                "background-color": "#F1F5F9",
-                                "border-color": "#475569",
+                        style={"color": "#F0FDFA",
+                                "background-color": "#134E4A",
+                                "border-color": "#F0FDFA",
                                 "border-radius":"9999px",
                                 'fontSize': 14,
                                 "font-family":"Product Sans",
@@ -267,9 +265,9 @@ text = dbc.Card(
                         color="dark", 
                         className="me-1",
                         size="sm",
-                        style={"color": "#475569",
-                                "background-color": "#F1F5F9",
-                                "border-color": "#475569",
+                        style={"color": "#F0FDFA",
+                                "background-color": "#134E4A",
+                                "border-color": "#F0FDFA",
                                 "border-radius":"9999px",
                                 'fontSize': 14,
                                 "font-family":"Product Sans",
@@ -279,16 +277,22 @@ text = dbc.Card(
                         color="#747474", 
                         className="me-1",
                         size="sm",
-                        style={"color": "#475569",
-                                "background-color": "#F1F5F9",
-                                "border-color": "#475569",
+                        style={"color": "#F0FDFA",
+                                "background-color": "#134E4A",
+                                "border-color": "#F0FDFA",
                                 "border-radius":"9999px",
                                 'fontSize': 14,
                                 "font-family":"Product Sans",
                                 "padding": "0.1rem 1rem 0.1rem 1rem"},
                         href="https://dash.plotly.com/vtk"),
             
-            
+            html.P(
+                "Source of data : SITG ; Author: Lorenzo Perozzi",
+                className="mt-4",
+                style={'color': '#4B5563', 'fontSize': 12, 
+                "font-family":"Product Sans"},
+            ),
+
         ]
     ),
     style={"width": "100%"},
