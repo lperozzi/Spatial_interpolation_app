@@ -64,7 +64,6 @@ pyzmq==22.3.0
 scipy==1.8.0
 scooby==0.5.12
 six==1.16.0
-sklearn==0.0
 stack-data==0.2.0
 tenacity==8.0.1
 threadpoolctl==3.1.0
