@@ -494,7 +494,6 @@ def updatePresetName(  fname, cubeAxes):
 )
 def updatePresetName2(  fname, cubeAxes):
     points, polys, elevation, color_range2, cmap = updateWarp_surface2( fname)
-    print(cmap)
     
     return [
         "grid" in cubeAxes,
