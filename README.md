@@ -1,4 +1,3 @@
-# Exploring spatial interpolation
 
 ![A demo of the spatial-interpolation app](./demo.png)
 
