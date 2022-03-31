@@ -10,7 +10,7 @@ The goal of that example is to compare different interpolation algorithms and vi
 First clone this repo:
 
 ``` bash
-git clone https://github.com/lperozzi/Spatial_interpolation_app
+git clone https://github.com/lperozzi/Spatial_interpolation_app.git
 cd Spatial_interpolation_app
 ```
 
