@@ -69,6 +69,7 @@ points, polys, elevation, color_range2, cmap = updateWarp_surface2()
 
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
 server = app.server
 
 vtk_view = dash_vtk.View(
