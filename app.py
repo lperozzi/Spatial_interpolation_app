@@ -226,11 +226,13 @@ text = dbc.Card(
     dbc.CardBody(
         [
             html.P(
-                "Spatial interpolation is the process of using points with known values to estimate values at other unknown points. This app present two approaches to interpolate the depth of Molasse measured in 63 wells over the Geneva area in Switzerland. The deterministic interpolation allow to explore 3 differents algorithms (nearest neighbous,  biharmonic spline and Gaussian processes), while in the geostatistical approach, an ordinary Kriging and a sequential gaussian simulation (SGS) algorithms have been used to interpolate the 63 depth values. It seems that OK and SGS are the better estimator and that SGS, by computing local summary statistics, allow to quantify the local uncertainty. In addition, SGS results better represents the natura variability of the Molassse surface  ",
+                "Spatial interpolation is the process of using points with known values to estimate values at other unknown points. This app present different approaches to interpolate the depth of Molasse measured in 63 wells over the Geneva area in Switzerland. The deterministic interpolation section allow to explore 3 different algorithms (nearest neighbors,  biharmonic spline and Gaussian processes), while in the geostatistical approach, an ordinary Kriging and a Sequential Gaussian Simulation (SGS) algorithms have been used. It seems that Kriging and SGS are the better estimator and that SGS, by computing local summary statistics, allow to quantify the local uncertainty. In addition, SGS results better represents the natural variability of the Molassse surface.",
                 style={'color': '#444444', 'fontSize': 14, "font-family":"Product Sans"},
             ),
-            html.P(
-                "The codes and notebook are available here.",
+            dcc.Markdown(
+                """
+                The codes to build this app and the notebooks for the spatial analysis are available [here](https://github.com/lperozzi/Spatial_interpolation_app) and [here](https://github.com/lperozzi/Spatial_interpolation_analysis), respectively.
+                 """,
                 style={'color': '#444444', 'fontSize': 14, "font-family":"Product Sans"},
             ),
 
