@@ -1,28 +1,26 @@
 import dash
-import dash_bootstrap_components as dbc
+
 import pandas as pd
-import plotly.graph_objs as go
+
 from dash import Input, Output, dcc, html
-from sklearn import datasets
-from sklearn.cluster import KMeans
 
 import os
-import dash
+
 import dash_vtk
 import dash_bootstrap_components as dbc
 import dash_html_components as html
 import dash_core_components as dcc
-from dash.dependencies import Input, Output, State
+from dash.dependencies import Input, Output
 import pandas as pd
 import random
-import json
+
 import numpy as np
 import plotly.express as px
 import pyvista as pv
-from pyvista import examples
+
 from vtk.util.numpy_support import vtk_to_numpy
 
-from dash_vtk.utils import presets
+# from dash_vtk.utils import presets
 # print(presets)
 random.seed(42)
 
