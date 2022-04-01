@@ -1,27 +1,17 @@
 import dash
-
 import pandas as pd
-
 from dash import Input, Output, dcc, html
-
 import os
-
 import dash_vtk
 import dash_bootstrap_components as dbc
-import dash_html_components as html
-import dash_core_components as dcc
 from dash.dependencies import Input, Output
 import pandas as pd
 import random
-
 import numpy as np
 import plotly.express as px
 import pyvista as pv
 
 from vtk.util.numpy_support import vtk_to_numpy
-
-# from dash_vtk.utils import presets
-# print(presets)
 random.seed(42)
 
 
