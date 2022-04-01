@@ -5,7 +5,6 @@ import os
 import dash_vtk
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
-import pandas as pd
 import random
 import numpy as np
 import plotly.express as px
