@@ -14,7 +14,8 @@ dash-bootstrap-components==1.0.3
 dash-core-components==2.0.0
 dash-html-components==2.0.0
 dash-table==5.0.0
--e git+https://github.com/plotly/dash-vtk.git@b97ba38e412f9537fc67abdc40ef683b0096d059#egg=dash_vtk
+# -e git+https://github.com/plotly/dash-vtk.git@b97ba38e412f9537fc67abdc40ef683b0096d059#egg=dash_vtk
+ash-vtk==0.0.9
 decorator==5.1.1
 entrypoints==0.4
 executing==0.8.3
