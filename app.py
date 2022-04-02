@@ -215,7 +215,7 @@ text = dbc.Card(
     dbc.CardBody(
         [
             html.P(
-                "Spatial interpolation is the process of using points with known values to estimate values at other unknown points. This app present different approaches to interpolate the depth of Molasse measured in 63 wells over the Geneva area in Switzerland. Three conventional algorithms (nearest neighbors,  biharmonic spline and Gaussian processes) have been used for the determinists interpolations, while in the geostatistical approach, an ordinary Kriging and a Sequential Gaussian Simulation (SGS) algorithms have been used. It seems that Biharmonic spline, Kriging and SGS are the better estimator and that SGS, by computing local summary statistics, allow to quantify the local uncertainty. In addition, SGS results better represents the natural variability of the Molassse surface.",
+                "Spatial interpolation is the process of using points with known values to estimate values at other unknown points. This app present different approaches to interpolate the depth of Molasse measured in 63 wells over the Geneva area in Switzerland. Three conventional algorithms (nearest neighbors,  biharmonic spline and Gaussian processes) have been used for the determinists interpolations, while in the geostatistical approach, an ordinary Kriging and a Sequential Gaussian Simulation (SGS) algorithms have been used. It seems that Biharmonic spline (cross-validated), Kriging and SGS are the better estimator and that SGS, by computing local summary statistics, allow to quantify the local uncertainty. In addition, SGS results better represents the natural variability of the Molasse surface.",
                 style={'color': '#1E293B', 'fontSize': 14, "font-family":"Product Sans"},
             ),
             dcc.Markdown(
@@ -296,8 +296,8 @@ controls_det = dbc.Card(
                     id="dataset",
                     options=[
                          {"label": "Nearest-neighbor interpolation", "value": "Nearest"},
-                         {"label": "Biharmonic spline interpolation (overfit)", "value": "Spline_overfit"},
-                         {"label": "Biharmonic spline interpolation (smooth)", "value": "Spline"},
+                         {"label": "Biharmonic spline interpolation (default)", "value": "Spline"},
+                         {"label": "Biharmonic spline interpolation (cross-validated)", "value": "Spline_CV"},
                          {"label": "Gaussian Processes interpolation", "value": "GaussianProcess"}
                     ],
                     style={'fontSize': 14,"font-family":"Product Sans"},
