@@ -192,9 +192,9 @@ fig.update_layout(margin=dict(l=20, r=20, t=10, b=20),
 mapbox = dict(
                             uirevision='no reset of zoom', # prevent to dezoom 
                             # accesstoken = token,
-                            style = "https://api.maptiler.com/maps/ch-swisstopo-lbm-grey/style.json?key=Y0QFvc1p5eTvlCMj4GEX",
-                            zoom= 11,
-                            center= {"lon": 6.115, "lat": 46.215},
+                            style = "https://api.maptiler.com/maps/40c425a3-06f3-4111-804f-12b1cb22b860/style.json?key=Y0QFvc1p5eTvlCMj4GEX",
+                            zoom= 11.4,
+                            center= {"lon": 6.113, "lat": 46.215},
                         ),)
 
 figura = dbc.Card(
